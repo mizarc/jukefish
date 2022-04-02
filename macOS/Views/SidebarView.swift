@@ -16,6 +16,15 @@ struct SidebarView: View {
                     .fontWeight(.semibold)
                     .foregroundColor(Color.gray)
                 NavigationLink(destination: MusicView()) {
+                    Label("Music", systemImage: "book")
+                }
+                
+                Text("Jellyfin Libraries")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.gray)
+                    .padding(.top, 14)
+                NavigationLink(destination: MusicView()) {
                     Label("All Libraries", systemImage: "book")
                 }
                 NavigationLink(destination: MusicView()) {
