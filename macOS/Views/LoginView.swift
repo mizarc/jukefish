@@ -52,7 +52,6 @@ struct UsernameField: View {
             TextField("Nemo", text: $username)
                 .frame(maxWidth: 200)
         }
-        
     }
 }
 
@@ -73,6 +72,7 @@ struct LoginButton: View {
         Button("Login") {
             
         }
+        .keyboardShortcut(.defaultAction)
     }
 }
 

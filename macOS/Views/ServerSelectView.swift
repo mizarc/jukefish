@@ -28,6 +28,7 @@ struct ServerSelectView: View {
                 ConnectButton()
                     .padding(.bottom, 20)
                     .padding(.trailing, 20)
+                    .disabled(hostname.isEmpty)
             }
         }
         .frame(width: 400, height: 200)
@@ -59,6 +60,7 @@ struct ConnectButton: View {
         Button("Connect") {
             
         }
+        .keyboardShortcut(.defaultAction)
     }
 }
 
