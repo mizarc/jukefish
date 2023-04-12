@@ -15,7 +15,7 @@ struct ContentView: View {
             .frame(minWidth: 700, minHeight: 300)
         
         .sheet(isPresented: $showLogin) {
-            LoginView()
+            ServerSelectView()
         }
     }
 }
