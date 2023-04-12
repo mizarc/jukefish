@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showLogin = true
+    
     var body: some View {
         SidebarView()
             .frame(minWidth: 700, minHeight: 300)
+        
+        .sheet(isPresented: $showLogin) {
+            LoginView()
+        }
     }
 }
 
