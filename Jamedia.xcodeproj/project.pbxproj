@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7C57604429E679020010069E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C57604329E679020010069E /* LoginView.swift */; };
-		7C57604629E6998C0010069E /* ServerSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C57604529E6998C0010069E /* ServerSelectView.swift */; };
+		7C57604829E710A40010069E /* ServerSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C57604529E6998C0010069E /* ServerSelectView.swift */; };
+		7C57604A29E85E850010069E /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C57604929E85E850010069E /* AlbumView.swift */; };
 		7CF29B1D27F16FA000BFB2BA /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B1C27F16FA000BFB2BA /* Tests_iOS.swift */; };
 		7CF29B1F27F16FA000BFB2BA /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B1E27F16FA000BFB2BA /* Tests_iOSLaunchTests.swift */; };
 		7CF29B2927F16FA000BFB2BA /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B2827F16FA000BFB2BA /* Tests_macOS.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		7C57604329E679020010069E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7C57604529E6998C0010069E /* ServerSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSelectView.swift; sourceTree = "<group>"; };
+		7C57604929E85E850010069E /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		7CF29B0427F16F9C00BFB2BA /* JamediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamediaApp.swift; sourceTree = "<group>"; };
 		7CF29B0527F16F9C00BFB2BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CF29B0627F16FA000BFB2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				7CF29B4927F20E2400BFB2BA /* ContentView.swift */,
 				7C57604329E679020010069E /* LoginView.swift */,
 				7C57604529E6998C0010069E /* ServerSelectView.swift */,
+				7C57604929E85E850010069E /* AlbumView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,7 +350,8 @@
 				7CF29B5527F6DA2E00BFB2BA /* Artist.swift in Sources */,
 				7C57604429E679020010069E /* LoginView.swift in Sources */,
 				7CF29B4A27F20E2400BFB2BA /* ContentView.swift in Sources */,
-				7C57604629E6998C0010069E /* ServerSelectView.swift in Sources */,
+				7C57604A29E85E850010069E /* AlbumView.swift in Sources */,
+				7C57604829E710A40010069E /* ServerSelectView.swift in Sources */,
 				7CF29B2D27F16FA000BFB2BA /* JamediaApp.swift in Sources */,
 				7CF29B4627F2078E00BFB2BA /* MusicView.swift in Sources */,
 				7CF29B4427F180AC00BFB2BA /* SidebarView.swift in Sources */,

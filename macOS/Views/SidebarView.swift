@@ -30,8 +30,8 @@ struct SidebarView: View {
                 NavigationLink(destination: MusicView()) {
                     Label("Music", systemImage: "book")
                 }
-                NavigationLink(destination: MusicView()) {
-                    Label("Shows", systemImage: "book")
+                NavigationLink(destination: AlbumView()) {
+                    Label("Albums", systemImage: "book")
                 }
                 NavigationLink(destination: MusicView()) {
                     Label("Movies", systemImage: "book")
