@@ -8,20 +8,14 @@
 import SwiftUI
 
 struct AlbumView: View {
-    var items: [GridItem] = Array(repeating: .init(.adaptive(minimum: 120)), count: 2)
-    
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: items) {
-                Text("Placeholder1")
-                Text("Placeholder2")
-                Text("Placeholder3")
-                Text("Placeholder4")
-                Text("Placeholder5")
-                Text("Placeholder6")
-            }
+        VStack(alignment: .leading) {
+            AsyncImage(url: /*@START_MENU_TOKEN@*/URL(string: "https://example.com/icon.png")/*@END_MENU_TOKEN@*/)
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+            Text("Album Name").bold()
+            Text("Artist Name")
         }
-        .navigationTitle("Albums")
     }
 }
 
