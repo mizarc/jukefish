@@ -15,26 +15,15 @@ struct SidebarView: View {
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.gray)
-                NavigationLink(destination: MusicView()) {
-                    Label("Music", systemImage: "book")
-                }
-                
-                Text("Jellyfin Libraries")
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.gray)
                     .padding(.top, 14)
-                NavigationLink(destination: MusicView()) {
-                    Label("All Libraries", systemImage: "book")
-                }
-                NavigationLink(destination: MusicView()) {
-                    Label("Music", systemImage: "book")
-                }
                 NavigationLink(destination: AlbumCollectionView()) {
                     Label("Albums", systemImage: "book")
                 }
                 NavigationLink(destination: MusicView()) {
-                    Label("Movies", systemImage: "book")
+                    Label("Artists", systemImage: "book")
+                }
+                NavigationLink(destination: MusicView()) {
+                    Label("Songs", systemImage: "book")
                 }
             }
             .navigationTitle("Woopie")
