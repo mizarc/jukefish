@@ -25,6 +25,9 @@ struct SidebarView: View {
                 NavigationLink(destination: MusicView()) {
                     Label("Songs", systemImage: "book")
                 }
+                NavigationLink(destination: DebugView()) {
+                    Label("Debug", systemImage: "book")
+                }
             }
             .navigationTitle("Woopie")
             .toolbar {
