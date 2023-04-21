@@ -18,8 +18,8 @@ struct DebugView: View {
             Task {
                 do {
                     let a = await createJellyfinInstance()
-                    let result = try await displayArtists(jellyfinClient: a!)
-                    test_result = (result?.value.absoluteString)!
+                    let artists = try await getArtists(jellyfinClient: a!)
+                    test_result = artists![0].name!
                 } catch {
                     print("Error: \(error)")
                 }

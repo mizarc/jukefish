@@ -33,10 +33,14 @@ func createJellyfinInstance() async -> JellyfinClient? {
     }
 }
 
-func displayArtists(jellyfinClient: JellyfinClient) async -> Response<URL>? {
+func getArtists(jellyfinClient: JellyfinClient) async -> [ArtistInfo]? {
     do {
-        let query = try await jellyfinClient.download(for: Paths.getArtists())
-        return query
+        let query = try await jellyfinClient.send(Paths.getArtists())
+        var artists: [ArtistInfo] = []
+        for item in query.value.items! {
+            artists.append(ArtistInfo(name: item.name))
+        }
+        return artists
     }
     catch {
         return nil
