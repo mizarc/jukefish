@@ -8,21 +8,18 @@
 import SwiftUI
 
 struct DebugView: View {
-    @State private var test_result = "asdf"
+    @EnvironmentObject var jellyfinInstance: JellyfinInstance
+    @StateObject var artists = ArtistCollectionViewModel()
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(test_result)
+            ForEach(artists.artists, id: \.self) { artist in
+                Text(artist.name)
+            }
         }
         .onAppear() {
             Task {
-                do {
-                    let a = await createJellyfinInstance()
-                    let artists = try await getArtists(jellyfinClient: a!)
-                    test_result = artists![0].name!
-                } catch {
-                    print("Error: \(error)")
-                }
+                await artists.getArtists(jellyfinInstance: jellyfinInstance)
             }
         }
     }

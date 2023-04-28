@@ -11,9 +11,22 @@ import Get
 
 @main
 struct JamediaApp: App {
+    var jellyfinInstance = JellyfinInstance()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(jellyfinInstance)
+        }
+    }
+}
+
+class JellyfinInstance: ObservableObject {
+    @Published var jellyfinClient: JellyfinClient?
+    
+    init() {
+        Task {
+            self.jellyfinClient = await createJellyfinInstance()
         }
     }
 }
@@ -24,23 +37,9 @@ func createJellyfinInstance() async -> JellyfinClient? {
      
     do {
         print("got this far 1")
-        let response = try await jellyfinClient.signIn(username: "us", password: "pw")
+        try await jellyfinClient.signIn(username: "us", password: "pw")
         print("got this far 2")
         return jellyfinClient
-    }
-    catch {
-        return nil
-    }
-}
-
-func getArtists(jellyfinClient: JellyfinClient) async -> [ArtistInfo]? {
-    do {
-        let query = try await jellyfinClient.send(Paths.getArtists())
-        var artists: [ArtistInfo] = []
-        for item in query.value.items! {
-            artists.append(ArtistInfo(name: item.name))
-        }
-        return artists
     }
     catch {
         return nil

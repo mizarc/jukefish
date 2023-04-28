@@ -16,6 +16,7 @@
 		7C590DD429EFD808001F82DC /* JellyfinAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 7C590DD329EFD808001F82DC /* JellyfinAPI */; };
 		7C590DD929EFFD70001F82DC /* JellyfinAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 7C590DD829EFFD70001F82DC /* JellyfinAPI */; };
 		7C590DDB29F005BF001F82DC /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DDA29F005BF001F82DC /* DebugView.swift */; };
+		7C590DDE29F44308001F82DC /* ArtistCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DDD29F44308001F82DC /* ArtistCollectionViewModel.swift */; };
 		7CF29B1D27F16FA000BFB2BA /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B1C27F16FA000BFB2BA /* Tests_iOS.swift */; };
 		7CF29B1F27F16FA000BFB2BA /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B1E27F16FA000BFB2BA /* Tests_iOSLaunchTests.swift */; };
 		7CF29B2927F16FA000BFB2BA /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B2827F16FA000BFB2BA /* Tests_macOS.swift */; };
@@ -57,6 +58,7 @@
 		7C590DCE29EC6D41001F82DC /* ArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistView.swift; sourceTree = "<group>"; };
 		7C590DD029EC6D5C001F82DC /* ArtistCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCollectionView.swift; sourceTree = "<group>"; };
 		7C590DDA29F005BF001F82DC /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		7C590DDD29F44308001F82DC /* ArtistCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCollectionViewModel.swift; sourceTree = "<group>"; };
 		7CF29B0427F16F9C00BFB2BA /* JamediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamediaApp.swift; sourceTree = "<group>"; };
 		7CF29B0527F16F9C00BFB2BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CF29B0627F16FA000BFB2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C590DDC29F4415F001F82DC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7C590DDD29F44308001F82DC /* ArtistCollectionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		7CF29AFE27F16F9C00BFB2BA = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 		7CF29B0327F16F9C00BFB2BA /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7C590DDC29F4415F001F82DC /* ViewModels */,
 				7CF29B0427F16F9C00BFB2BA /* JamediaApp.swift */,
 				7CF29B0527F16F9C00BFB2BA /* ContentView.swift */,
 				7CF29B0627F16FA000BFB2BA /* Assets.xcassets */,
@@ -391,6 +402,7 @@
 				7CF29B4427F180AC00BFB2BA /* SidebarView.swift in Sources */,
 				7C57604C29E90AB60010069E /* AlbumView.swift in Sources */,
 				7C590DDB29F005BF001F82DC /* DebugView.swift in Sources */,
+				7C590DDE29F44308001F82DC /* ArtistCollectionViewModel.swift in Sources */,
 				7C590DCF29EC6D41001F82DC /* ArtistView.swift in Sources */,
 				7CF29B4C27F689C700BFB2BA /* Album.swift in Sources */,
 			);
