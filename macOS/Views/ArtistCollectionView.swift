@@ -8,21 +8,25 @@
 import SwiftUI
 
 struct ArtistCollectionView: View {
+    @EnvironmentObject var jellyfinInstance: JellyfinInstance
+    @StateObject var artists = ArtistCollectionViewModel()
+    
     var items: [GridItem] = Array(repeating: .init(.adaptive(minimum: 200)), count: 2)
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: items) {
-                ArtistView()
-                ArtistView()
-                ArtistView()
-                ArtistView()
-                ArtistView()
-                ArtistView()
-                ArtistView()
+                ForEach(artists.artists, id: \.self) { artist in
+                    ArtistView(name: artist.name)
+                }
             }
         }
         .navigationTitle("Artists")
+        .onAppear() {
+            Task {
+                await artists.getArtists(jellyfinInstance: jellyfinInstance)
+            }
+        }
     }
 }
 
