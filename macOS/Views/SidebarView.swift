@@ -19,6 +19,9 @@ struct SidebarView: View {
                 NavigationLink(destination: AlbumCollectionView()) {
                     Label("Albums", systemImage: "book")
                 }
+                NavigationLink(destination: AlbumArtistCollectionView()) {
+                    Label("Album Artists", systemImage: "book")
+                }
                 NavigationLink(destination: ArtistCollectionView()) {
                     Label("Artists", systemImage: "book")
                 }
