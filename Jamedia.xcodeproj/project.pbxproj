@@ -21,6 +21,7 @@
 		7C590DE229FEDB8E001F82DC /* AlbumArtistCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DE129FEDB8E001F82DC /* AlbumArtistCollectionViewModel.swift */; };
 		7C590DE429FEDC4F001F82DC /* AlbumArtistThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DE329FEDC4F001F82DC /* AlbumArtistThumbnailView.swift */; };
 		7C590DE62A00F2A6001F82DC /* AlbumCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DE52A00F2A6001F82DC /* AlbumCollectionViewModel.swift */; };
+		7C590DEC2A0174B3001F82DC /* BlurHashDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DEB2A0174B3001F82DC /* BlurHashDecoder.swift */; };
 		7CF29B1D27F16FA000BFB2BA /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B1C27F16FA000BFB2BA /* Tests_iOS.swift */; };
 		7CF29B1F27F16FA000BFB2BA /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B1E27F16FA000BFB2BA /* Tests_iOSLaunchTests.swift */; };
 		7CF29B2927F16FA000BFB2BA /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B2827F16FA000BFB2BA /* Tests_macOS.swift */; };
@@ -67,6 +68,7 @@
 		7C590DE129FEDB8E001F82DC /* AlbumArtistCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtistCollectionViewModel.swift; sourceTree = "<group>"; };
 		7C590DE329FEDC4F001F82DC /* AlbumArtistThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtistThumbnailView.swift; sourceTree = "<group>"; };
 		7C590DE52A00F2A6001F82DC /* AlbumCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewModel.swift; sourceTree = "<group>"; };
+		7C590DEB2A0174B3001F82DC /* BlurHashDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurHashDecoder.swift; sourceTree = "<group>"; };
 		7CF29B0427F16F9C00BFB2BA /* JamediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamediaApp.swift; sourceTree = "<group>"; };
 		7CF29B0527F16F9C00BFB2BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CF29B0627F16FA000BFB2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +139,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		7C590DEA2A017490001F82DC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7C590DEB2A0174B3001F82DC /* BlurHashDecoder.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		7CF29AFE27F16F9C00BFB2BA = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +184,7 @@
 		7CF29B1227F16FA000BFB2BA /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				7C590DEA2A017490001F82DC /* Utilities */,
 				7CF29B5327F6DA1F00BFB2BA /* Models */,
 				7CF29B4027F17A4200BFB2BA /* Views */,
 				7CF29B1327F16FA000BFB2BA /* macOS.entitlements */,
@@ -408,6 +419,7 @@
 				7C57604429E679020010069E /* LoginView.swift in Sources */,
 				7CF29B4A27F20E2400BFB2BA /* ContentView.swift in Sources */,
 				7C57604A29E85E850010069E /* AlbumCollectionView.swift in Sources */,
+				7C590DEC2A0174B3001F82DC /* BlurHashDecoder.swift in Sources */,
 				7C57604829E710A40010069E /* ServerSelectView.swift in Sources */,
 				7CF29B2D27F16FA000BFB2BA /* JamediaApp.swift in Sources */,
 				7CF29B4627F2078E00BFB2BA /* MusicView.swift in Sources */,
