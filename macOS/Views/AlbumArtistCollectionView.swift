@@ -17,7 +17,7 @@ struct AlbumArtistCollectionView: View {
         ScrollView {
             LazyVGrid(columns: items) {
                 ForEach(artists.artists, id: \.self) { artist in
-                    ArtistThumbnailView(name: artist.name)
+                    AlbumArtistThumbnailView(name: artist.name)
                 }
             }
         }

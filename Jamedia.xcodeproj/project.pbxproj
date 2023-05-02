@@ -20,6 +20,7 @@
 		7C590DE029FEDAB5001F82DC /* AlbumArtistCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DDF29FEDAB5001F82DC /* AlbumArtistCollectionView.swift */; };
 		7C590DE229FEDB8E001F82DC /* AlbumArtistCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DE129FEDB8E001F82DC /* AlbumArtistCollectionViewModel.swift */; };
 		7C590DE429FEDC4F001F82DC /* AlbumArtistThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DE329FEDC4F001F82DC /* AlbumArtistThumbnailView.swift */; };
+		7C590DE62A00F2A6001F82DC /* AlbumCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DE52A00F2A6001F82DC /* AlbumCollectionViewModel.swift */; };
 		7CF29B1D27F16FA000BFB2BA /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B1C27F16FA000BFB2BA /* Tests_iOS.swift */; };
 		7CF29B1F27F16FA000BFB2BA /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B1E27F16FA000BFB2BA /* Tests_iOSLaunchTests.swift */; };
 		7CF29B2927F16FA000BFB2BA /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B2827F16FA000BFB2BA /* Tests_macOS.swift */; };
@@ -65,6 +66,7 @@
 		7C590DDF29FEDAB5001F82DC /* AlbumArtistCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtistCollectionView.swift; sourceTree = "<group>"; };
 		7C590DE129FEDB8E001F82DC /* AlbumArtistCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtistCollectionViewModel.swift; sourceTree = "<group>"; };
 		7C590DE329FEDC4F001F82DC /* AlbumArtistThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtistThumbnailView.swift; sourceTree = "<group>"; };
+		7C590DE52A00F2A6001F82DC /* AlbumCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewModel.swift; sourceTree = "<group>"; };
 		7CF29B0427F16F9C00BFB2BA /* JamediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamediaApp.swift; sourceTree = "<group>"; };
 		7CF29B0527F16F9C00BFB2BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CF29B0627F16FA000BFB2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				7C590DDD29F44308001F82DC /* ArtistCollectionViewModel.swift */,
 				7C590DE129FEDB8E001F82DC /* AlbumArtistCollectionViewModel.swift */,
+				7C590DE52A00F2A6001F82DC /* AlbumCollectionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C590DE62A00F2A6001F82DC /* AlbumCollectionViewModel.swift in Sources */,
 				7CF29B5527F6DA2E00BFB2BA /* Artist.swift in Sources */,
 				7C57604429E679020010069E /* LoginView.swift in Sources */,
 				7CF29B4A27F20E2400BFB2BA /* ContentView.swift in Sources */,

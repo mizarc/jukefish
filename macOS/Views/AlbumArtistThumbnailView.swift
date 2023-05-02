@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct AlbumArtistThumbnailView: View {
+    let name: String
+    
     var body: some View {
         VStack(alignment: .leading) {
             AsyncImage(url: /*@START_MENU_TOKEN@*/URL(string: "https://example.com/icon.png")/*@END_MENU_TOKEN@*/)
                 .scaledToFit()
                 .frame(width: 200, height: 200)
-            Text("Album Name").bold()
-            Text("Artist Name")
+            Text(name).bold()
         }
     }
 }
 
 struct AlbumArtistThumbnailView_Previews: PreviewProvider {
     static var previews: some View {
-        AlbumThumbnailView()
+        AlbumArtistThumbnailView(name: "Placeholder")
     }
 }
