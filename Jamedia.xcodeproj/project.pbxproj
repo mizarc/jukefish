@@ -23,6 +23,8 @@
 		7C590DE62A00F2A6001F82DC /* AlbumCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DE52A00F2A6001F82DC /* AlbumCollectionViewModel.swift */; };
 		7C590DEC2A0174B3001F82DC /* BlurHashDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DEB2A0174B3001F82DC /* BlurHashDecoder.swift */; };
 		7C590DEE2A041AA0001F82DC /* SongListElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DED2A041AA0001F82DC /* SongListElementView.swift */; };
+		7C590DF02A04F610001F82DC /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DEF2A04F610001F82DC /* AlbumView.swift */; };
+		7C590DF22A050D24001F82DC /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590DF12A050D24001F82DC /* AlbumViewModel.swift */; };
 		7CF29B1D27F16FA000BFB2BA /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B1C27F16FA000BFB2BA /* Tests_iOS.swift */; };
 		7CF29B1F27F16FA000BFB2BA /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B1E27F16FA000BFB2BA /* Tests_iOSLaunchTests.swift */; };
 		7CF29B2927F16FA000BFB2BA /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29B2827F16FA000BFB2BA /* Tests_macOS.swift */; };
@@ -71,6 +73,8 @@
 		7C590DE52A00F2A6001F82DC /* AlbumCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewModel.swift; sourceTree = "<group>"; };
 		7C590DEB2A0174B3001F82DC /* BlurHashDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurHashDecoder.swift; sourceTree = "<group>"; };
 		7C590DED2A041AA0001F82DC /* SongListElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListElementView.swift; sourceTree = "<group>"; };
+		7C590DEF2A04F610001F82DC /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		7C590DF12A050D24001F82DC /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
 		7CF29B0427F16F9C00BFB2BA /* JamediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamediaApp.swift; sourceTree = "<group>"; };
 		7CF29B0527F16F9C00BFB2BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CF29B0627F16FA000BFB2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 				7C590DDD29F44308001F82DC /* ArtistCollectionViewModel.swift */,
 				7C590DE129FEDB8E001F82DC /* AlbumArtistCollectionViewModel.swift */,
 				7C590DE52A00F2A6001F82DC /* AlbumCollectionViewModel.swift */,
+				7C590DF12A050D24001F82DC /* AlbumViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				7C590DD029EC6D5C001F82DC /* ArtistCollectionView.swift */,
 				7C590DDA29F005BF001F82DC /* DebugView.swift */,
 				7C590DED2A041AA0001F82DC /* SongListElementView.swift */,
+				7C590DEF2A04F610001F82DC /* AlbumView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -420,6 +426,7 @@
 				7C590DE62A00F2A6001F82DC /* AlbumCollectionViewModel.swift in Sources */,
 				7CF29B5527F6DA2E00BFB2BA /* Artist.swift in Sources */,
 				7C57604429E679020010069E /* LoginView.swift in Sources */,
+				7C590DF02A04F610001F82DC /* AlbumView.swift in Sources */,
 				7CF29B4A27F20E2400BFB2BA /* ContentView.swift in Sources */,
 				7C57604A29E85E850010069E /* AlbumCollectionView.swift in Sources */,
 				7C590DEC2A0174B3001F82DC /* BlurHashDecoder.swift in Sources */,
@@ -436,6 +443,7 @@
 				7CF29B4C27F689C700BFB2BA /* Album.swift in Sources */,
 				7C590DE429FEDC4F001F82DC /* AlbumArtistThumbnailView.swift in Sources */,
 				7C590DEE2A041AA0001F82DC /* SongListElementView.swift in Sources */,
+				7C590DF22A050D24001F82DC /* AlbumViewModel.swift in Sources */,
 				7C590DE229FEDB8E001F82DC /* AlbumArtistCollectionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
